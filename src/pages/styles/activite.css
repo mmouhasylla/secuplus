@@ -1,0 +1,333 @@
+@import "../../data/styles.css";
+
+.activite-logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 80px;
+    /* Même espacement que About et Homepage */
+}
+
+.activite-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding-top: 30px;
+    /* Réduit car le padding-top est maintenant sur le logo */
+}
+
+.expertise-showcase {
+    margin-top: 50px;
+}
+
+.expertise-section {
+    margin-bottom: 80px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 16px;
+}
+
+.section-icon {
+    font-size: 2rem;
+    color: var(--link-color);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.expertise-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.expertise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--link-color), #0ea5e9);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
+    border-color: rgba(20, 184, 166, 0.2);
+}
+
+.expertise-card:hover::before {
+    transform: scaleX(1);
+}
+
+.card-visual {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--link-color), #0ea5e9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 8px 24px rgba(20, 184, 166, 0.3);
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover .card-visual {
+    transform: scale(1.1);
+    box-shadow: 0 12px 32px rgba(20, 184, 166, 0.4);
+}
+
+.card-main-icon {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0 0 12px 0;
+    transition: color 0.3s ease;
+}
+
+.expertise-card:hover .card-title {
+    color: var(--link-color);
+}
+
+.card-description {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-info-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.data-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.data-content {
+    width: 80%;
+    border: 0px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid rgba(20, 184, 166, 0.1);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--link-color), #0ea5e9);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    border-color: rgba(20, 184, 166, 0.3);
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--link-color);
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+.card-list {
+    text-align: left;
+}
+
+.card-list li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .expertise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+    }
+
+    .expertise-card {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activite-logo-container {
+        padding-top: 70px;
+        /* Ajusté pour mobile */
+    }
+
+    .activite-container {
+        padding-top: 20px;
+    }
+
+    .activite-title {
+        font-size: 2rem !important;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .expertise-card {
+        padding: 28px 20px;
+    }
+
+    .card-visual {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-main-icon {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .activite-logo-container {
+        padding-top: 60px;
+        /* Ajusté pour mobile small */
+    }
+
+    .activite-container {
+        padding-top: 15px;
+    }
+
+    .activite-title {
+        font-size: 1.8rem !important;
+    }
+
+    .activite-subtitle-list li {
+        grid-template-columns: 20px auto;
+        gap: 8px;
+    }
+
+    .activite-icon {
+        font-size: 18px;
+    }
+
+    .activite-subtitle-list li span {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,13 @@
+.timeline {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.timeline-title {
+    font-weight: lighter !important; /* to remove the !important, enlever le title devant actitivte title ou, modifier le app.css */
+    font-size: 2.5rem !important;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

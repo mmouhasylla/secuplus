@@ -1,0 +1,63 @@
+.ContactForm {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff9f3;
+  border-radius: 15px;
+  /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);*/
+}
+
+.ContactForm h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f7f9fc;
+  transition: border-color 0.3s;
+}
+
+.formInput:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.formRow > * {
+  flex: 1;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}

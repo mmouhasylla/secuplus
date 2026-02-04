@@ -1,0 +1,118 @@
+{
+    "main": {
+        "title": "ECONS SENEGAL LLC",
+        "name": "ECONS"
+    },
+    "homepage": {
+        "title": "Sylla Engineering and Construction",
+        "description": "With a presence in the construction industry since 1989, formerly known as Nouvelle Entreprise Sylla (NES), we became Sylla Engineering and Construction in 2012. Econs embodies a genuine passion for construction and project delivery, backed by 36 years of expertise.",
+        "bodypage": "Econs is headquartered in Senegal with subsidiaries across Africa (Benin, Ivory Coast, Rwanda) and Europe (France)."
+    },
+    "about": {
+        "title": "About us",
+        "description": "ECONS LLC's expertise and capabilities are built on:",
+        "sub": [
+            "Highly qualified professionals committed to exceeding client expectations while adhering to international standards",
+            "Cutting-edge construction equipment and technologies to deliver innovative solutions"
+        ],
+        "description2": "Driven by complete client satisfaction, ECONS LLC embraces these core values:",
+        "values": [
+            "Quality and Excellence",
+            "Commitment and Accountability",
+            "Trust and Partnership"
+        ],
+        "mot_de_fin": "Building excellence - our approach to every challenge!"
+    },
+    "activities": {
+        "title": "Our Expertise",
+        "mainActivities": "Core Construction Services:",
+        "structuralWorks": "Structural and finishing works",
+        "finishingWorks": "Interior finishing and detailing",
+        "publicWorks": "Public works and infrastructure (roads, pipelines, civil engineering)",
+        "businessSectors": "Specialized Sectors:",
+        "healthInfrastructure": "Healthcare facilities",
+        "educationalInfrastructure": "Educational buildings",
+        "personalProjects": "Private developments (homes, apartments, commercial spaces)",
+        "discoverNumbers": "Our Achievements",
+        "employees": "300+ team members",
+        "technicalStaff": "Technical network",
+        "technicalStaffDescription": "Strategic partnerships across Benin, Ivory Coast, and Rwanda",
+        "riskPrevention": "Quality assurance",
+        "riskPreventionPoint1": "Collaboration with leading control agencies",
+        "riskPreventionPoint2": "Partnerships with major engineering firms",
+        "expertise": "Industry leadership",
+        "experience": "40+ years of experience"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "nav_title": "Projects",
+        "subtitle": "Discover our portfolio of successful constructions",
+        "cicd": {
+            "title": "Dakar International Cancer Center",
+            "description": "Part of a network of radiotherapy centers for cancer treatment across Africa (Senegal, Benin, Rwanda)",
+            "linkText": "View Project"
+        },
+        "bellevue": {
+            "title": "Bellevue Medical Center",
+            "description": "Formerly Vision Clinic, completed in 2012",
+            "linkText": "View Project"
+        },
+        "rcc": {
+            "title": "Rwanda Cancer Center",
+            "description": "Constructed in partnership with the Rwandan defense forces",
+            "linkText": "View Project"
+        },
+        "waly": {
+            "title": "Waly Sakhir Gallery",
+            "description": "Luxury complex serving as showroom for designer Collé Sow Ardo",
+            "linkText": "View Project"
+        },
+        "aramia": {
+            "title": "ARAMIA Residence",
+            "description": "Premium residential development on 665 m² with basement and landscaped areas",
+            "linkText": "View Project"
+        },
+        "ocean": {
+            "title": "Ocean Medical Center",
+            "description": "Multidisciplinary clinic specializing in medical tourism, featuring penthouses and spa",
+            "linkText": "View Project"
+        }
+    },
+    "contact": {
+        "title": "Contact us",
+        "paragraph1": "Thank you for your interest in our company. We're here to support your construction projects from concept to completion. For inquiries, please email us at {{email}}.",
+        "paragraph2": "We strive to respond to all messages within 24 hours."
+    },
+    "contactForm": {
+        "title": "Send us a message",
+        "successMessage": "✅ Your message has been sent successfully!",
+        "errorMessage": "An error occurred. Please try again.",
+        "submitButton": "Send",
+        "placeholders": {
+            "lastName": "Last Name",
+            "firstName": "First Name",
+            "subject": "Subject",
+            "phone": "Phone (optional)",
+            "email": "Email",
+            "message": "Message ..."
+        },
+        "errors": {
+            "lastNameRequired": "Please enter your last name",
+            "firstNameRequired": "Please enter your first name",
+            "subjectRequired": "Please enter a subject",
+            "emailRequired": "Please enter a valid email",
+            "emailInvalid": "Invalid email format",
+            "messageRequired": "Please enter a message"
+        }
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "activities": "Activities",
+        "contact": "Contact"
+    },
+    "footer": {
+        "copyright": "© {{year}} KHASYL TECH, All Rights Reserved."
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "main": {
+        "title": "SECUPLUS SARL",
+        "name": "SECUPLUS"
+    },
+    "homepage": {
+        "title": "SECUPLUS - Sécurité Privée",
+        "description": "Systèmes et Services de Sécurité : Surveillance Vidéo – Gardiennage – Protection.",
+        "bodypage": "Forte de plus de trente (30) années d’expérience, SECU-PLUS intervient sur l’ensemble du territoire national et propose des solutions globales et adaptées."
+    },
+    "about": {
+        "title": "Qui sommes-nous ?",
+        "description": "SECU-PLUS SARL est une société de droit sénégalais spécialisée dans les métiers de la sécurité privée.",
+        "sub": [
+            "Forte de plus de trente (30) années d’expérience, SECU-PLUS intervient sur l’ensemble du territoire national...",
+            "Grâce à son expertise éprouvée, son organisation rigoureuse et son personnel qualifié..."
+        ],
+        "description2": "Les agents constituent le pilier du dispositif opérationnel de SECU-PLUS. Ils sont répartis en deux catégories :",
+        "values": [
+            "Agents titulaires",
+            "Agents postulants (agents remplaçants)"
+        ],
+        "mot_de_fin": "Votre sécurité, notre priorité."
+    },
+    "activities": {
+        "title": "Nos Services",
+        "mainActivities": "Nos Domaines d'Intervention",
+        "structuralWorks": "Gardiennage",
+        "finishingWorks": "Protection Rapprochée",
+        "publicWorks": "Convoyage de Fonds",
+        "businessSectors": "Moyens & Equipements",
+        "healthInfrastructure": "Communication",
+        "educationalInfrastructure": "Logistique",
+        "personalProjects": "Equipements",
+        "discoverNumbers": "SECUPLUS en chiffres",
+        "employees": "Agents Qualifiés",
+        "technicalStaff": "Années d'Expérience",
+        "technicalStaffDescription": "Plus de 30 ans au service de votre sécurité",
+        "riskPrevention": "Moyens Matériels",
+        "riskPreventionPoint1": "Flotte de véhicules et motos",
+        "riskPreventionPoint2": "Armement et équipements de pointe",
+        "expertise": "Couverture Nationale",
+        "experience": "Intervention sur tout le Sénégal"
+    },
+    "projects": {
+        "title": "Références Professionnelles",
+        "nav_title": "Partenaires",
+        "subtitle": "Nous travaillons avec des grandes entreprises et institutions, locales comme internationales. Des acteurs sérieux qui nous font confiance sur des projets stratégiques.",
+        "engagement_title": "Notre engagement",
+        "engagement_text": "On garantit à nos clients des standards de sécurité élevés, adaptés à leurs besoins spécifiques. Leur confiance, on la gagne en livrant du travail de qualité."
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "paragraph1": "Pour toute demande de devis ou d'information, n'hésitez pas à nous contacter par email à {{email}} ou par téléphone.",
+        "paragraph2": "Notre permanence est disponible 24h/24 et 7j/7."
+    },
+    "contactForm": {
+        "title": "Envoyez-nous un message",
+        "successMessage": "✅ Votre message a bien été envoyé !",
+        "errorMessage": "Une erreur est survenue. Veuillez réessayer.",
+        "submitButton": "Envoyer",
+        "placeholders": {
+            "lastName": "Nom",
+            "firstName": "Prénom",
+            "subject": "Objet",
+            "phone": "Téléphone",
+            "email": "Email",
+            "message": "Message ..."
+        },
+        "errors": {
+            "lastNameRequired": "Veuillez entrer votre nom",
+            "firstNameRequired": "Veuillez entrer votre prénom",
+            "subjectRequired": "Veuillez entrer l'objet",
+            "emailRequired": "Veuillez entrer un email valide",
+            "emailInvalid": "Format d'email invalide",
+            "messageRequired": "Veuillez entrer un message"
+        }
+    },
+    "navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "projects": "Partenaires",
+        "activities": "Services",
+        "contact": "Contact",
+        "contact_us": "NOUS CONTACTER"
+    },
+    "footer": {
+        "copyright": "© {{year}} SECUPLUS SARL, Tous droits réservés."
+    }
+}

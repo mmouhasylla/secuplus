@@ -1,0 +1,146 @@
+@import "../../../data/styles.css";
+
+.social,
+.email-wrapper,
+.address-wrapper {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.social-wrapper {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.social-numbers {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	flex: 1;
+}
+
+.social-numbers a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.social-numbers a:hover .social-text {
+	color: var(--link-color);
+}
+
+.email-wrapper a,
+.address-wrapper a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: inherit;
+}
+
+.social-icon {
+	font-size: 15px;
+	color: var(--secondary-color);
+	width: 20px;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+.social-text {
+	color: var(--secondary-color);
+	padding-left: 30px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+	flex: 1;
+}
+
+.email::before {
+	content: "";
+	display: block;
+	padding-top: 20px;
+	border-top: 3px solid #f4f4f5;
+	margin-top: 20px;
+}
+
+.address::before {
+	content: "";
+	display: block;
+	padding-top: 20px;
+	border-top: 3px solid #f4f4f5;
+	margin-top: 20px;
+}
+
+.email-wrapper {
+	padding-top: 20px;
+}
+
+.address-wrapper {
+	padding-top: 20px;
+}
+
+/* Style pour le lien d'adresse */
+.address-link {
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.address-link:hover {
+	color: var(--link-color);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+	.social,
+	.email-wrapper,
+	.address-wrapper {
+		padding-bottom: 15px;
+	}
+
+	.social-text {
+		padding-left: 25px;
+		font-size: 13px;
+	}
+
+	.email::before,
+	.address::before {
+		padding-top: 15px;
+		margin-top: 15px;
+	}
+
+	.email-wrapper,
+	.address-wrapper {
+		padding-top: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.social,
+	.email-wrapper,
+	.address-wrapper {
+		padding-bottom: 12px;
+	}
+
+	.social-text {
+		padding-left: 20px;
+		font-size: 12px;
+	}
+
+	.email::before,
+	.address::before {
+		padding-top: 12px;
+		margin-top: 12px;
+	}
+
+	.email-wrapper,
+	.address-wrapper {
+		padding-top: 12px;
+	}
+}

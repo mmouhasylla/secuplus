@@ -1,0 +1,163 @@
+@import "../../data/styles.css";
+
+.about-logo-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-top: 80px;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 30px;
+}
+
+.about-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.about-right-side {
+	flex: 1 1 60%;
+	min-width: 300px;
+}
+
+.about-left-side {
+	flex: 1 1 35%;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+
+.about-title {
+	width: 100% !important;
+	font-size: 2.5rem;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+.about-subtitle {
+	width: 100% !important;
+	text-align: justify;
+	margin-bottom: 15px;
+	line-height: 1.6;
+}
+
+.about-subtitle-list {
+	width: 95%;
+	margin: 15px 0;
+	padding-left: 20px;
+}
+
+.about-subtitle-list li {
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.special-text {
+	text-align: center !important;
+	color: crimson !important;
+	font-style: italic !important;
+	font-weight: 600;
+	margin-top: 25px !important;
+}
+
+.about-image {
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+	border-radius: 10px;
+	/* SUPPRIMÉ: box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); */
+}
+
+/* ===== SECTION SOCIALS ===== */
+.about-socials {
+	width: 100%;
+	max-width: 350px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+	.about-main {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.about-right-side {
+		width: 100%;
+	}
+
+	.about-left-side {
+		width: 100%;
+		align-items: center;
+	}
+
+	.about-image {
+		max-width: 300px;
+	}
+
+	.about-socials {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-logo-container {
+		padding-top: 70px;
+	}
+
+	.about-container {
+		padding-top: 20px;
+	}
+
+	.about-main {
+		gap: 25px;
+	}
+
+	.about-title {
+		font-size: 2rem;
+	}
+
+	.about-subtitle {
+		text-align: left;
+	}
+
+	.about-image {
+		max-width: 280px;
+	}
+
+	.about-socials {
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-logo-container {
+		padding-top: 60px;
+	}
+
+	.about-container {
+		padding-top: 15px;
+	}
+
+	.about-title {
+		font-size: 1.8rem;
+	}
+
+	.about-image {
+		max-width: 250px;
+	}
+
+	.about-socials {
+		max-width: 100%;
+	}
+}

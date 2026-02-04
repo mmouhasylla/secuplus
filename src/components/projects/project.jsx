@@ -11,22 +11,27 @@ const Project = (props) => {
 	return (
 		<React.Fragment>
 			<div className="project">
-				<Link to={link}>
+				<Link to={link || "#"}>
 					<div className="project-container">
-						{logo && (							// modification apporté afin de rendre le logo optionnel
-							<div className="project-logo">
+						<div className="project-logo">
+							{logo ? (
 								<img src={logo} alt="logo" />
-							</div>
-						)}
+							) : (
+								<div className="project-icon-placeholder">
+									<FontAwesomeIcon icon={props.icon} style={{ fontSize: "30px", color: "#000000" }} />
+								</div>
+							)}
+						</div>
 						<div className="project-title">{title}</div>
 						<div className="project-description">{description}</div>
-						<div className="project-link">
-							<div className="project-link-icon">
-								<FontAwesomeIcon icon={faLink} />
+						{link && (
+							<div className="project-link">
+								<div className="project-link-icon">
+									<FontAwesomeIcon icon={faLink} />
+								</div>
+								<div className="project-link-text">{linkText}</div>
 							</div>
-
-							<div className="project-link-text">{linkText}</div>
-						</div>
+						)}
 					</div>
 				</Link>
 			</div>

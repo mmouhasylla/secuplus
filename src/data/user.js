@@ -4,7 +4,7 @@ const INFO = {
 		name: "SECUPLUS",
 		email: "abdoulayemalickama@gmail.com",
 		address: "4, Cité C.D.E OUEST FOIRE DAKAR SENEGAL",
-		logo: "../logo_secuplus.webp",
+		logo: "logo_secuplus.webp",
 	},
 
 	socials: {
@@ -49,7 +49,7 @@ const INFO = {
 			title: "CBAO",
 			description:
 				"Banque",
-			logo: "",
+			logo: "../logo_cbao.webp",
 			linkText: "Site Web",
 			link: "https://cbaobank.com/fr",
 		},
@@ -57,7 +57,7 @@ const INFO = {
 			title: "CHAKA Computer",
 			description:
 				"Engineering & Telecom",
-			logo: "",
+			logo: "../logo_groupeChaka.webp",
 			linkText: "Site Web",
 			link: "https://groupechaka.com",
 		},
@@ -66,6 +66,7 @@ const INFO = {
 			description:
 				"Engineering & Telecom",
 			logo: "",
+			icon: "network",
 			linkText: "Site Web",
 			link: "http://ficracom.com/?p=soc",
 		},
@@ -73,7 +74,7 @@ const INFO = {
 			title: "HUAWEI Technologies",
 			description:
 				"Engineering & Telecom",
-			logo: "",
+			logo: "../logo_huawei.webp",
 			linkText: "Site Web",
 			link: "https://huaweisen.com",
 		},
@@ -81,7 +82,7 @@ const INFO = {
 			title: "HERTZ",
 			description:
 				"Tourisme",
-			logo: "",
+			logo: "../hertz-logo-black.png",
 			linkText: "Site Web",
 			link: "https://www.hertz.fr/rentacar/location-voiture/senegal/dakar",
 		},
@@ -90,6 +91,7 @@ const INFO = {
 			description:
 				"Programme de gestion intégré des écosystèmes du Sénégal (Partenariat Gouvernement-Banque Mondiale)",
 			logo: "",
+			icon: "handshake",
 			linkText: "",
 			link: "",
 		},

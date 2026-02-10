@@ -5,311 +5,155 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #000000;
+	/* N2M Style */
+	width: 100%;
 }
 
 .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: fixed;
-	top: 2vh;
-	/* LÉGÈREMENT PLUS BAS (était 3vh) */
+	position: sticky;
+	/* Make it sticky below TopBar */
+	top: 0;
 	z-index: 999;
 	width: 100%;
+	background-color: #000000;
 }
 
 .nav-background {
-	width: 520px;
-	height: 44px;
-	background: rgba(255, 255, 255, 0.95);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-	border-radius: 25px;
-	border: 1px solid rgba(0, 0, 0, 0.04);
+	width: 100%;
+	max-width: 1200px;
+	height: 50px;
+	/* Taller for better clickability */
+	background: #000000;
+	backdrop-filter: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: none;
+	display: flex;
+	justify-content: center;
 }
 
 .nav-list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 	align-items: center;
-	margin: 8px 30px 0 30px;
-	gap: 4px;
-	padding: 0;
+	margin: 0;
+	gap: 20px;
+	padding: 0 20px;
+	width: 100%;
 }
 
 .nav-item {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 14px;
 	white-space: nowrap;
-	flex: 1;
 	text-align: center;
-}
-
-.nav-item.active a {
-	color: var(--primary-color) !important;
 	position: relative;
-	font-weight: 500;
-}
-
-.nav-item.active a::after {
-	content: '';
-	position: absolute;
-	bottom: -6px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 4px;
-	height: 4px;
-	background: var(--link-color);
-	border-radius: 50%;
-	opacity: 0.8;
+	/* For dropdowns */
 }
 
 .nav-item a {
 	text-decoration: none;
-	color: var(--secondary-color);
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	padding: 8px 5px;
+	color: #ffffff;
+	/* White Text */
+	transition: all 0.3s ease;
+	padding: 15px 10px;
 	display: block;
-	width: 100%;
-	font-weight: 400;
-	border-radius: 12px;
-	position: relative;
-	overflow: hidden;
+	font-weight: 500;
 }
 
-.nav-item a::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(20, 184, 166, 0.08);
-	border-radius: 12px;
-	transform: scaleX(0);
-	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	z-index: -1;
-}
-
+.nav-item.active a,
 .nav-item a:hover {
-	color: var(--primary-color);
-	transform: translateY(-1px);
+	color: var(--primary-color) !important;
+	/* Blue on hover */
 }
 
-.nav-item a:hover::before {
-	transform: scaleX(1);
+/* Dropdowns */
+.dropdown-parent:hover .dropdown-menu {
+	display: block;
+	animation: fadeIn 0.3s ease;
 }
 
-/* ===== DROPDOWN LANGUE - CLIC ===== */
-.lang-dropdown {
-	position: relative;
-	flex: 0 0 auto;
-}
-
-.lang-trigger {
-	background: transparent;
-	border: none;
-	border-radius: 18px;
-	padding: 8px 5px;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 600;
-	color: var(--primary-color);
-	transition: all 0.2s ease-in-out;
-	min-width: 75px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 4px;
-	font-family: inherit;
-}
-
-.lang-trigger:hover {
-	color: var(--link-color);
-}
-
-.lang-trigger.active {
-	color: var(--link-color);
-}
-
-.dropdown-arrow {
-	font-size: 9px;
-	transition: transform 0.3s ease;
-	color: #6c757d;
-}
-
-.lang-trigger.active .dropdown-arrow {
-	transform: rotate(180deg);
-	color: var(--link-color);
-}
-
-.lang-trigger:hover .dropdown-arrow {
-	color: var(--link-color);
-}
-
-.lang-dropdown-menu {
+.dropdown-menu {
+	display: none;
 	position: absolute;
 	top: 100%;
-	right: 0;
-	background: rgba(255, 255, 255, 0.98);
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(0, 0, 0, 0.08);
-	border-radius: 12px;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-	min-width: 150px;
-	z-index: 1000;
-	margin-top: 8px;
-	animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	overflow: hidden;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(-8px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.lang-option {
-	width: 100%;
+	left: 0;
+	background-color: #ffffff;
+	/* White background for dropdown */
+	min-width: 220px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	border-radius: 0 0 4px 4px;
+	padding: 10px 0;
 	text-align: left;
-	padding: 12px 16px;
-	border: none;
-	background: transparent;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 500;
-	border-bottom: 1px solid #f8f9fa;
-	color: var(--primary-color);
-	transition: all 0.2s ease;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	font-family: inherit;
+	z-index: 1000;
 }
 
-.lang-option:last-child {
+.dropdown-link a {
+	color: #333 !important;
+	/* Black text in dropdown */
+	padding: 10px 20px;
+	font-size: 13px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-link a:hover {
+	background-color: #f8f9fa;
+	color: var(--primary-color) !important;
+	transform: translateX(5px);
+}
+
+.dropdown-link:last-child a {
 	border-bottom: none;
 }
 
-.lang-option:hover {
-	background: #f8f9fa;
-	color: var(--link-color);
+.arrow {
+	font-size: 10px;
+	margin-left: 4px;
 }
 
-.lang-option.active {
-	background: var(--link-color);
-	color: white;
+/* Lang Dropdown Override for Header */
+.lang-trigger {
+	color: #ffffff;
 }
 
-/* ===== RESPONSIVE MOBILE ===== */
+.lang-trigger:hover {
+	color: var(--primary-color);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+	.nav-list {
+		gap: 10px;
+		font-size: 12px;
+	}
+
+	.nav-item a {
+		padding: 10px 5px;
+		font-size: 13px;
+	}
+}
+
 @media (max-width: 768px) {
-	.navbar {
-		top: 1.5vh;
-		/* Ajusté pour mobile */
-	}
 
-	.nav-background {
-		width: 95%;
-		max-width: 500px;
-		height: 42px;
-	}
-
+	/* Mobile Menu needs a hamburger - For now, horizontal scroll or stack */
 	.nav-list {
-		margin: 7px 25px 0 25px;
-		gap: 3px;
+		overflow-x: auto;
+		justify-content: flex-start;
+		padding-bottom: 5px;
 	}
 
-	.nav-item {
-		font-size: 13px;
+	.dropdown-menu {
+		position: static;
+		display: none;
+		/* Hide complex dropdowns on mobile for now without JS toggle */
 	}
 
-	.lang-trigger {
-		font-size: 13px;
-		min-width: 70px;
-	}
-
-	.lang-dropdown-menu {
-		min-width: 140px;
-	}
-
-	.lang-option {
-		padding: 10px 14px;
-		font-size: 13px;
-	}
-}
-
-@media (max-width: 600px) {
-	.nav-background {
-		width: 98%;
-		max-width: 480px;
-		height: 40px;
-	}
-
-	.nav-list {
-		margin: 11px 20px 0 20px;
-		gap: 2px;
-	}
-
-	.nav-item {
-		font-size: 12px;
-	}
-
-	.lang-trigger {
-		font-size: 12px;
-		min-width: 65px;
-	}
-
-	.lang-dropdown-menu {
-		min-width: 130px;
-		right: -5px;
-	}
-
-	.lang-option {
-		padding: 9px 12px;
-		font-size: 12px;
-	}
-}
-
-@media (max-width: 480px) {
-	.navbar {
-		top: 1vh;
-		/* Ajusté pour mobile small */
-	}
-
-	.nav-background {
-		width: 99%;
-		max-width: 440px;
-		height: 38px;
-	}
-
-	.nav-list {
-		margin: 11px 15px 0 15px;
-		gap: 1px;
-	}
-
-	.nav-item {
-		font-size: 11px;
-	}
-
-	.lang-trigger {
-		font-size: 11px;
-		min-width: 60px;
-	}
-
-	.lang-dropdown-menu {
-		min-width: 120px;
-		right: -8px;
-	}
-
-	.lang-option {
-		padding: 8px 10px;
-		font-size: 11px;
-	}
+	/* Simple hide for complex dropdowns on pure css hover mobile is tricky. 
+       Assuming mobile users click parent link. */
 }

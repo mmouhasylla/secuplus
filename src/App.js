@@ -8,9 +8,14 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
-import ActivitesEcons from "./pages/activites_econs";
+import Services from "./pages/services";
+import Secteurs from "./pages/secteurs";
+import Technology from "./pages/technology";
+import Logistics from "./pages/moyens";
+import Careers from "./pages/carrieres";
 
 import { TRACKING_ID } from "./data/tracking";
+import "./data/styles.css";
 import "./app.css";
 
 function App() {
@@ -31,8 +36,12 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
+				<Route path="/services" element={<Services />} />
+				<Route path="/secteurs" element={<Secteurs />} />
+				<Route path="/technologies" element={<Technology />} />
+				<Route path="/moyens" element={<Logistics />} />
+				<Route path="/carrieres" element={<Careers />} />
 				<Route path="/partenaires" element={<Projects />} />
-				<Route path="/activites" element={<ActivitesEcons />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>

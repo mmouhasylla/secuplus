@@ -5,6 +5,10 @@
     },
     "homepage": {
         "title": "SECUPLUS - Sécurité Privée",
+        "about": {
+            "title": "Qui Sommes-Nous ?",
+            "cta": "En savoir plus"
+        },
         "description": "Systèmes et Services de Sécurité : Surveillance Vidéo – Gardiennage – Protection.",
         "bodypage": "Forte de plus de trente (30) années d’expérience, SECU-PLUS intervient sur l’ensemble du territoire national et propose des solutions globales et adaptées."
     },
@@ -85,6 +89,276 @@
         "contact_us": "NOUS CONTACTER"
     },
     "footer": {
-        "copyright": "© {{year}} KHASYL TECH, Tous droits réservés."
+        "services_title": "Nos Services",
+        "sectors_title": "Nos Domaines d'Expertise",
+        "about_title": "A propos de SECUPLUS",
+        "news": "Actualités",
+        "recruitment": "Recrutement",
+        "contact": "Contactez-nous",
+        "who_are_we": "Qui sommes-nous ?",
+        "legal": "Mentions légales",
+        "copyright": "© {{year}} SECUPLUS, Tous droits réservés."
+    },
+    "services": {
+        "title": "Nos Services",
+        "description": "Des solutions de sécurité sur mesure pour protéger ce qui compte le plus.",
+        "process_title": "Notre Processus d'Intervention",
+        "items": {
+            "gardiennage": {
+                "title": "Gardiennage",
+                "description": "Surveillance humaine professionnelle 24/7 pour sites sensibles.",
+                "process": {
+                    "step1": {
+                        "title": "Audit de Sécurité",
+                        "desc": "Analyse des risques et vulnérabilités du site."
+                    },
+                    "step2": {
+                        "title": "Plan de Protection",
+                        "desc": "Définition des moyens humains et techniques."
+                    },
+                    "step3": {
+                        "title": "Déploiement",
+                        "desc": "Mise en place des agents et consignes."
+                    },
+                    "step4": {
+                        "title": "Supervision 24/7",
+                        "desc": "Contrôle continu par notre centre opérationnel."
+                    }
+                }
+            },
+            "convoyage": {
+                "title": "Convoyage de Fonds",
+                "description": "Transport sécurisé de valeurs avec véhicules blindés et géolocalisation.",
+                "process": {
+                    "step1": {
+                        "title": "Planification",
+                        "desc": "Optimisation et sécurisation des itinéraires."
+                    },
+                    "step2": {
+                        "title": "Collecte",
+                        "desc": "Prise en charge sécurisée par équipe armée."
+                    },
+                    "step3": {
+                        "title": "Transport",
+                        "desc": "Acheminement sous surveillance GPS constante."
+                    },
+                    "step4": {
+                        "title": "Livraison",
+                        "desc": "Remise des fonds et reporting immédiat."
+                    }
+                }
+            },
+            "evenementiel": {
+                "title": "Sécurité Événementielle",
+                "description": "Gestion de foule et protection VIP pour événements majeurs.",
+                "process": {
+                    "step1": {
+                        "title": "Analyse Événement",
+                        "desc": "Étude du flux, VIPs et risques."
+                    },
+                    "step2": {
+                        "title": "Dispositif",
+                        "desc": "Filtrage, palpation et surveillance périmétrique."
+                    },
+                    "step3": {
+                        "title": "Coordination",
+                        "desc": "Gestion temps réel avec organisateurs."
+                    },
+                    "step4": {
+                        "title": "Debriefing",
+                        "desc": "Rapport post-événement détaillé."
+                    }
+                }
+            },
+            "surveillance": {
+                "title": "Surveillance Électronique",
+                "description": "Solutions technologiques avancées: Vidéo, Alarme, Contrôle d'accès.",
+                "process": {
+                    "step1": {
+                        "title": "Étude Technique",
+                        "desc": "Diagnostic des besoins technologiques."
+                    },
+                    "step2": {
+                        "title": "Installation",
+                        "desc": "Pose et paramétrage des systèmes."
+                    },
+                    "step3": {
+                        "title": "Raccordement",
+                        "desc": "Liaison au centre de télésurveillance."
+                    },
+                    "step4": {
+                        "title": "Maintenance",
+                        "desc": "Suivi préventif et curatif."
+                    }
+                }
+            },
+            "incendie": {
+                "title": "Sécurité Incendie",
+                "description": "Prévention et intervention incendie (SSIAP).",
+                "process": {
+                    "step1": {
+                        "title": "Audit Risque",
+                        "desc": "Conformité réglementaire incendie."
+                    },
+                    "step2": {
+                        "title": "Prévention",
+                        "desc": "Rondes et vérification matériel."
+                    },
+                    "step3": {
+                        "title": "Formation",
+                        "desc": "Sensibilisation du personnel."
+                    },
+                    "step4": {
+                        "title": "Intervention",
+                        "desc": "Réaction immédiate et évacuation."
+                    }
+                }
+            }
+        }
+    },
+    "sectors": {
+        "title": "Secteurs d'Activité",
+        "intro": "Une expertise pointue adaptée aux exigences de chaque industrie.",
+        "solutions_title": "Nos Solutions Dédiées",
+        "common_features": {
+            "analysis": "Analyse des risques spécifiques au secteur",
+            "staff": "Personnel formé aux protocoles",
+            "supervision": "Supervision et reporting adaptés",
+            "tech": "Technologies de pointe intégrées"
+        },
+        "items": {
+            "bancaire": {
+                "title": "Bancaire & Financier",
+                "desc": "Protection des agences, sièges et transport de fonds."
+            },
+            "diplomatie": {
+                "title": "Ambassades & Diplomatie",
+                "desc": "Sécurité renforcée pour corps diplomatiques."
+            },
+            "industriel": {
+                "title": "Industriel & Logistique",
+                "desc": "Contrôle d'accès et surveillance de sites étendus."
+            },
+            "residentiel": {
+                "title": "Résidentiel Prestige",
+                "desc": "Discrétion et sécurité pour résidences privées."
+            }
+        }
+    },
+    "technologies": {
+        "title": "Nos Technologies",
+        "intro": "L'intelligence artificielle et l'IoT au service de votre protection.",
+        "items": {
+            "video_ia": {
+                "title": "Vidéo IA",
+                "desc": "Détection d'intrusion par Intelligence Artificielle.",
+                "status": "En Service"
+            },
+            "rondes_nfc": {
+                "title": "Rondes NFC",
+                "desc": "Traçabilité numérique des rondes agents.",
+                "status": "En Service"
+            },
+            "drones": {
+                "title": "Drones",
+                "desc": "Surveillance aérienne de grands périmètres.",
+                "status": "En Service"
+            },
+            "iot": {
+                "title": "IoT Center",
+                "desc": "Plateforme unifiée de gestion sécurité.",
+                "status": "Bientôt"
+            }
+        }
+    },
+    "logistics": {
+        "title": "Nos Moyens",
+        "intro_title": "Force de Frappe Opérationnelle",
+        "intro_desc": "SecuPlus déploie des moyens logistiques importants pour assurer la réactivité et l'efficacité de ses interventions sur l'ensemble du territoire.",
+        "items": {
+            "vehicles": {
+                "title": "Véhicules 4x4",
+                "desc": "Intervention rapide tout terrain."
+            },
+            "trucks": {
+                "title": "Camions Blindés",
+                "desc": "Norme B6 pour convoyage."
+            },
+            "control_center": {
+                "title": "Centre de Contrôle",
+                "desc": "Supervision nationale 24/7."
+            },
+            "radios": {
+                "title": "Radios",
+                "desc": "Réseau crypté privé."
+            }
+        }
+    },
+    "careers": {
+        "title": "Carrières",
+        "hero_title": "Rejoignez l'Elite",
+        "hero_desc": "Construisez votre avenir au sein du leader de la sécurité privée au Sénégal.",
+        "benefits_title": "Pourquoi Nous Rejoindre ?",
+        "jobs_title": "Postes Ouverts",
+        "apply_btn": "Postuler",
+        "spontaneous_title": "Candidature Spontanée",
+        "spontaneous_desc": "Vous ne trouvez pas le poste idéal ? Envoyez-nous votre CV.",
+        "benefits": {
+            "training": "Formation Continue",
+            "career": "Avancement Carrière",
+            "health": "Assurance Santé",
+            "bonus": "Primes Performance"
+        },
+        "jobs": {
+            "agent": {
+                "title": "Agent de Sécurité",
+                "type": "CDI"
+            },
+            "team_leader": {
+                "title": "Chef d'Équipe",
+                "type": "CDI"
+            },
+            "operator": {
+                "title": "Opérateur Vidéo",
+                "type": "CDI"
+            }
+        }
+    },
+    "stats": {
+        "clients": "Clients Satisfaits",
+        "experience": "Années d'Expérience",
+        "availability": "Disponibilité",
+        "quality": "Engagement Qualité"
+    },
+    "trust": {
+        "iso": "Certifié ISO 9001",
+        "cnaps": "Agréé CNAPS (État du Sénégal)",
+        "insurance": "Assurance Responsabilité 500M FCFA"
+    },
+    "hero": {
+        "slide1": {
+            "title": "VOTRE SÉCURITÉ,",
+            "subtitle": "NOTRE PRIORITÉ ABSOLUE",
+            "service": "Gardiennage Professionnel 24/7",
+            "cta": "Découvrir nos services"
+        },
+        "slide2": {
+            "title": "TECHNOLOGIE DE POINTE",
+            "subtitle": "POUR VOTRE PROTECTION",
+            "service": "Surveillance Intelligente par IA",
+            "cta": "Nos technologies"
+        },
+        "slide3": {
+            "title": "CONVOYAGE DE FONDS",
+            "subtitle": "SÉCURISÉ ET CERTIFIÉ",
+            "service": "Véhicules Blindés Niveau B6",
+            "cta": "En savoir plus"
+        },
+        "slide4": {
+            "title": "PROTECTION ÉVÉNEMENTIELLE",
+            "subtitle": "EXPERTISE RECONNUE",
+            "service": "Gestion de Foules & Sécurité VIP",
+            "cta": "Nos références"
+        }
     }
 }

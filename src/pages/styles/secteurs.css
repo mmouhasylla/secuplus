@@ -1,0 +1,27 @@
+.secteurs-hero {
+    background-color: #0f172a;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.secteurs-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.secteurs-hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.secteurs-container {
+    max-width: 1200px;
+    margin: -40px auto 80px auto;
+    /* Negative margin to overlap hero */
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}

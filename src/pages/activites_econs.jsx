@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import NavBar from "../components/common/navBar";
+import TopBar from "../components/common/TopBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import INFO from "../data/user";
@@ -29,6 +30,7 @@ const ActivitesEcons = () => {
                 <meta name="keywords" content={currentSEO.keywords.join(", ")} />
             </Helmet>
             <div className="page-content">
+                <TopBar />
                 <NavBar active="activites" />
                 <div className="content-wrapper">
                     <div className="activite-logo-container">
@@ -131,11 +133,9 @@ const ActivitesEcons = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="page-footer">
-                            <Footer />
-                        </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </React.Fragment>
     );

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import NavBar from "../components/common/navBar";
+import TopBar from "../components/common/TopBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
@@ -37,6 +38,7 @@ const ReadArticle = () => {
 			</Helmet>
 
 			<div className="page-content">
+				<TopBar />
 				<NavBar />
 
 				<div className="content-wrapper">
@@ -72,10 +74,8 @@ const ReadArticle = () => {
 							</div>
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
 				</div>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);

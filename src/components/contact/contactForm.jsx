@@ -12,9 +12,6 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState('');
 
   const onSubmit = (data) => {
-    console.log("Formulaire soumis");
-    console.log(data.nom, data.prenom, data.objet, data.telephone, data.email, data.message);
-
     const templateParams = {
       nom: data.nom,
       prenom: data.prenom,
@@ -32,13 +29,11 @@ const ContactForm = () => {
     )
       .then(
         (response) => {
-          console.log('SUCCESS!', response.status, response.text);
           setSuccessMessage(t('contactForm.successMessage'));
           setTimeout(() => setSuccessMessage(''), 5000);
           reset();
         },
         (err) => {
-          console.log('FAILED...', err);
           setSuccessMessage(t('contactForm.errorMessage'));
           setTimeout(() => setSuccessMessage(''), 5000);
         },

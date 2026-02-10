@@ -5,6 +5,10 @@
     },
     "homepage": {
         "title": "SECUPLUS - Private Security",
+        "about": {
+            "title": "Who We Are",
+            "cta": "Learn More"
+        },
         "description": "Security Systems and Services: Video Surveillance – Guarding – Protection.",
         "bodypage": "With over thirty (30) years of experience, SECU-PLUS operates throughout the national territory and offers global and adapted solutions."
     },
@@ -85,6 +89,276 @@
         "contact_us": "CONTACT US"
     },
     "footer": {
-        "copyright": "© {{year}} KHASYL TECH, All Rights Reserved."
+        "services_title": "Our Services",
+        "sectors_title": "Our Areas of Expertise",
+        "about_title": "About SECUPLUS",
+        "news": "News",
+        "recruitment": "Recruitment",
+        "contact": "Contact Us",
+        "who_are_we": "Who are we?",
+        "legal": "Legal Notice",
+        "copyright": "© {{year}} SECUPLUS, All Rights Reserved."
+    },
+    "services": {
+        "title": "Our Services",
+        "description": "Tailored security solutions to protect what matters most.",
+        "process_title": "Our Intervention Process",
+        "items": {
+            "gardiennage": {
+                "title": "Guarding",
+                "description": "Professional 24/7 human surveillance for sensitive sites.",
+                "process": {
+                    "step1": {
+                        "title": "Security Audit",
+                        "desc": "Analysis of site risks and vulnerabilities."
+                    },
+                    "step2": {
+                        "title": "Protection Plan",
+                        "desc": "Definition of human and technical resources."
+                    },
+                    "step3": {
+                        "title": "Deployment",
+                        "desc": "Implementation of agents and instructions."
+                    },
+                    "step4": {
+                        "title": "24/7 Supervision",
+                        "desc": "Continuous monitoring by our operational center."
+                    }
+                }
+            },
+            "convoyage": {
+                "title": "Cash in Transit",
+                "description": "Secure transport of valuables with armored vehicles and geolocation.",
+                "process": {
+                    "step1": {
+                        "title": "Planning",
+                        "desc": "Route optimization and security."
+                    },
+                    "step2": {
+                        "title": "Collection",
+                        "desc": "Secure pickup by armed team."
+                    },
+                    "step3": {
+                        "title": "Transport",
+                        "desc": "Transit under constant GPS surveillance."
+                    },
+                    "step4": {
+                        "title": "Delivery",
+                        "desc": "Handover of funds and immediate reporting."
+                    }
+                }
+            },
+            "evenementiel": {
+                "title": "Event Security",
+                "description": "Crowd management and VIP protection for major events.",
+                "process": {
+                    "step1": {
+                        "title": "Event Analysis",
+                        "desc": "Study of flow, VIPs, and risks."
+                    },
+                    "step2": {
+                        "title": "Setup",
+                        "desc": "Filtering, pat-down, and perimeter surveillance."
+                    },
+                    "step3": {
+                        "title": "Coordination",
+                        "desc": "Real-time management with organizers."
+                    },
+                    "step4": {
+                        "title": "Debriefing",
+                        "desc": "Detailed post-event report."
+                    }
+                }
+            },
+            "surveillance": {
+                "title": "Electronic Surveillance",
+                "description": "Advanced technical solutions: Video, Alarm, Access Control.",
+                "process": {
+                    "step1": {
+                        "title": "Technical Study",
+                        "desc": "Diagnosis of technological needs."
+                    },
+                    "step2": {
+                        "title": "Installation",
+                        "desc": "System setup and configuration."
+                    },
+                    "step3": {
+                        "title": "Connection",
+                        "desc": "Link to the remote monitoring center."
+                    },
+                    "step4": {
+                        "title": "Maintenance",
+                        "desc": "Preventive and corrective follow-up."
+                    }
+                }
+            },
+            "incendie": {
+                "title": "Fire Safety",
+                "description": "Fire prevention and intervention (SSIAP).",
+                "process": {
+                    "step1": {
+                        "title": "Risk Audit",
+                        "desc": "Fire regulatory compliance."
+                    },
+                    "step2": {
+                        "title": "Prevention",
+                        "desc": "Patrols and equipment verification."
+                    },
+                    "step3": {
+                        "title": "Training",
+                        "desc": "Staff awareness training."
+                    },
+                    "step4": {
+                        "title": "Intervention",
+                        "desc": "Immediate reaction and evacuation."
+                    }
+                }
+            }
+        }
+    },
+    "sectors": {
+        "title": "Business Sectors",
+        "intro": "Specialized expertise adapted to the requirements of each industry.",
+        "solutions_title": "Our Dedicated Solutions",
+        "common_features": {
+            "analysis": "Sector-specific risk analysis",
+            "staff": "Personnel trained in protocols",
+            "supervision": "Adapted supervision and reporting",
+            "tech": "Integrated cutting-edge technologies"
+        },
+        "items": {
+            "bancaire": {
+                "title": "Banking & Financial",
+                "desc": "Protection of branches, headquarters, and cash transport."
+            },
+            "diplomatie": {
+                "title": "Embassies & Diplomacy",
+                "desc": "Reinforced security for diplomatic corps."
+            },
+            "industriel": {
+                "title": "Industrial & Logistics",
+                "desc": "Access control and surveillance of large sites."
+            },
+            "residentiel": {
+                "title": "Prestige Residential",
+                "desc": "Discretion and security for private residences."
+            }
+        }
+    },
+    "technologies": {
+        "title": "Our Technologies",
+        "intro": "Artificial Intelligence and IoT at the service of your protection.",
+        "items": {
+            "video_ia": {
+                "title": "AI Video",
+                "desc": "Intrusion detection by Artificial Intelligence.",
+                "status": "Live"
+            },
+            "rondes_nfc": {
+                "title": "NFC Patrols",
+                "desc": "Digital traceability of agent patrols.",
+                "status": "Live"
+            },
+            "drones": {
+                "title": "Drones",
+                "desc": "Aerial surveillance of large perimeters.",
+                "status": "Live"
+            },
+            "iot": {
+                "title": "IoT Center",
+                "desc": "Unified security management platform.",
+                "status": "Coming Soon"
+            }
+        }
+    },
+    "logistics": {
+        "title": "Our Means",
+        "intro_title": "Operational Strike Force",
+        "intro_desc": "SecuPlus deploys significant logistical resources to ensure the responsiveness and efficiency of its interventions throughout the territory.",
+        "items": {
+            "vehicles": {
+                "title": "4x4 Vehicles",
+                "desc": "Rapid all-terrain intervention."
+            },
+            "trucks": {
+                "title": "Armored Trucks",
+                "desc": "B6 standard for transit."
+            },
+            "control_center": {
+                "title": "Control Center",
+                "desc": "National 24/7 supervision."
+            },
+            "radios": {
+                "title": "Radios",
+                "desc": "Private encrypted network."
+            }
+        }
+    },
+    "careers": {
+        "title": "Careers",
+        "hero_title": "Join the Elite",
+        "hero_desc": "Build your future with the leader in private security in Senegal.",
+        "benefits_title": "Why Join Us?",
+        "jobs_title": "Open Positions",
+        "apply_btn": "Apply",
+        "spontaneous_title": "Spontaneous Application",
+        "spontaneous_desc": "Can't find the ideal position? Send us your CV.",
+        "benefits": {
+            "training": "Continuous Training",
+            "career": "Career Advancement",
+            "health": "Health Insurance",
+            "bonus": "Performance Bonuses"
+        },
+        "jobs": {
+            "agent": {
+                "title": "Security Agent",
+                "type": "Permanent"
+            },
+            "team_leader": {
+                "title": "Team Leader",
+                "type": "Permanent"
+            },
+            "operator": {
+                "title": "Video Operator",
+                "type": "Permanent"
+            }
+        }
+    },
+    "stats": {
+        "clients": "Satisfied Clients",
+        "experience": "Years of Experience",
+        "availability": "Availability",
+        "quality": "Quality Commitment"
+    },
+    "trust": {
+        "iso": "ISO 9001 Certified",
+        "cnaps": "CNAPS Approved (State of Senegal)",
+        "insurance": "Liability Insurance 500M FCFA"
+    },
+    "hero": {
+        "slide1": {
+            "title": "YOUR SECURITY,",
+            "subtitle": "OUR ABSOLUTE PRIORITY",
+            "service": "Professional 24/7 Guarding",
+            "cta": "Discover our services"
+        },
+        "slide2": {
+            "title": "CUTTING-EDGE TECHNOLOGY",
+            "subtitle": "FOR YOUR PROTECTION",
+            "service": "Intelligent Surveillance by AI",
+            "cta": "Our technologies"
+        },
+        "slide3": {
+            "title": "CASH IN TRANSIT",
+            "subtitle": "SECURE AND CERTIFIED",
+            "service": "Level B6 Armored Vehicles",
+            "cta": "Learn more"
+        },
+        "slide4": {
+            "title": "EVENT PROTECTION",
+            "subtitle": "RECOGNIZED EXPERTISE",
+            "service": "Crowd Management & VIP Security",
+            "cta": "Our references"
+        }
     }
 }

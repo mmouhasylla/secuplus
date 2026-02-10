@@ -4,7 +4,7 @@ const INFO = {
 		name: "SECUPLUS",
 		email: "abdoulayemalickama@gmail.com",
 		address: "4, Cité C.D.E OUEST FOIRE DAKAR SENEGAL",
-		logo: "logo_secuplus.webp",
+		logo: "/logo_secuplus2.webp",
 	},
 
 	socials: {
@@ -49,7 +49,7 @@ const INFO = {
 			title: "CBAO",
 			description:
 				"Banque",
-			logo: "../logo_cbao.webp",
+			logo: "/logo_cbao.webp",
 			linkText: "Site Web",
 			link: "https://cbaobank.com/fr",
 		},
@@ -82,7 +82,7 @@ const INFO = {
 			title: "HERTZ",
 			description:
 				"Tourisme",
-			logo: "../hertz-logo-black.png",
+			logo: "/hertz-logo-black.png",
 			linkText: "Site Web",
 			link: "https://www.hertz.fr/rentacar/location-voiture/senegal/dakar",
 		},

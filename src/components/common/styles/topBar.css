@@ -1,0 +1,50 @@
+.top-bar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.top-bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-contacts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.contact-icon {
+    color: #2563EB;
+    /* Blue Corporate */
+}
+
+@media (max-width: 768px) {
+    .top-bar-contacts {
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import { faNetworkWired, faHandshake } from "@fortawesome/free-solid-svg-icons"; // Icons for fallback
 
 import Project from "./project";
@@ -7,7 +6,6 @@ import INFO from "../../data/user";
 import "./styles/allProjects.css";
 
 const AllProjects = () => {
-	const { t } = useTranslation();
 
 	// Icon Mapping
 	const iconMap = {

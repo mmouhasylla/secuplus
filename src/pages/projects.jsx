@@ -3,14 +3,19 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
 import NavBar from "../components/common/navBar";
+import TopBar from "../components/common/TopBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
 
+/**
+ * Projects Page (Partenaires)
+ * Displays a list of partners/projects and engagement information.
+ * Note: 'projects.jsx' maps to the 'Partenaires' (Partners) route/concept in this context.
+ */
 const Projects = () => {
 	const { t } = useTranslation();
 
@@ -29,12 +34,11 @@ const Projects = () => {
 			</Helmet>
 
 			<div className="page-content">
+				<TopBar />
 				<NavBar active="partenaires" />
 
 				<div className="content-wrapper">
-					<div className="projects-logo-container">
-						<Logo width={46} />
-					</div>
+
 
 					<div className="projects-container">
 						<div className="title projects-title">{t("projects.title")}</div>
@@ -57,9 +61,10 @@ const Projects = () => {
 						</div>
 					</div>
 
-					<Footer />
 				</div>
+
 			</div>
+			<Footer />
 		</>
 	);
 };

@@ -1,14 +1,26 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import CONTENT from "../../data/content";
 import "./styles/navBar.css";
 
-const NavBar = () => {
+/**
+ * Navigation Bar Component
+ * Displays the top navigation links and dropdowns.
+ * Handles language switching and responsive behavior.
+ * 
+ * @param {Object} props - Component props
+ * @param {string} props.active - The current active page identifier
+ */
+const NavBar = ({ active }) => {
 	const { t, i18n } = useTranslation();
-	const location = useLocation();
 	const [langDropdown, setLangDropdown] = useState(false);
 	const dropdownRef = useRef(null);
 
+	/**
+	 * Switches the application language.
+	 * @param {string} lang - The language code ('fr' or 'en')
+	 */
 	const handleLanguageChange = (lang) => {
 		i18n.changeLanguage(lang);
 		localStorage.setItem("lang", lang);
@@ -19,7 +31,7 @@ const NavBar = () => {
 		setLangDropdown(!langDropdown);
 	};
 
-	// Fermer le dropdown en cliquant à l'extérieur
+	// Close dropdown when clicking outside
 	useEffect(() => {
 		const handleClickOutside = (event) => {
 			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -38,29 +50,68 @@ const NavBar = () => {
 			<nav className="navbar">
 				<div className="nav-background">
 					<ul className="nav-list">
-						<li className={location.pathname === "/" ? "nav-item active" : "nav-item"}>
+						{/* Home Link */}
+						<li className={active === "home" ? "nav-item active" : "nav-item"}>
 							<Link to="/">{t("navbar.home")}</Link>
 						</li>
-						<li className={location.pathname === "/about" ? "nav-item active" : "nav-item"}>
+
+						{/* About Link */}
+						<li className={active === "about" ? "nav-item active" : "nav-item"}>
 							<Link to="/about">{t("navbar.about")}</Link>
 						</li>
-						<li className={location.pathname === "/partenaires" ? "nav-item active" : "nav-item"}>
-							<Link to="/partenaires">{t("navbar.projects")}</Link>
+
+						{/* Services Dropdown */}
+						<li className={active === "services" ? "nav-item active dropdown-parent" : "nav-item dropdown-parent"}>
+							<Link to="/services">{t("activities.title")} <span className="arrow">▼</span></Link>
+							<ul className="dropdown-menu">
+								{CONTENT.services.items.map(item => (
+									<li key={item.id} className="dropdown-link">
+										<Link to={item.link}>{t(item.titleKey)}</Link>
+									</li>
+								))}
+							</ul>
 						</li>
-						<li className={location.pathname === "/activites" ? "nav-item active" : "nav-item"}>
-							<Link to="/activites">{t("navbar.activities")}</Link>
+
+						{/* Sectors Dropdown */}
+						<li className={active === "secteurs" ? "nav-item active dropdown-parent" : "nav-item dropdown-parent"}>
+							<Link to="/secteurs">{t("sectors.title")} <span className="arrow">▼</span></Link>
+							<ul className="dropdown-menu">
+								{CONTENT.sectors.items.map(item => (
+									<li key={item.id} className="dropdown-link">
+										<Link to={item.link}>{t(item.titleKey)}</Link>
+									</li>
+								))}
+							</ul>
 						</li>
-						<li className={location.pathname === "/contact" ? "nav-item active" : "nav-item"}>
+
+						{/* Technology Link */}
+						<li className={active === "technology" ? "nav-item active" : "nav-item"}>
+							<Link to="/technologies">{t("technologies.title")}</Link>
+						</li>
+
+						{/* Logistics Link */}
+						<li className={active === "moyens" ? "nav-item active" : "nav-item"}>
+							<Link to="/moyens">{t("logistics.title")}</Link>
+						</li>
+
+						{/* Careers Link */}
+						<li className={active === "carrieres" ? "nav-item active" : "nav-item"}>
+							<Link to="/carrieres">{t("careers.title")}</Link>
+						</li>
+
+						{/* Contact Link */}
+						<li className={active === "contact" ? "nav-item active" : "nav-item"}>
 							<Link to="/contact">{t("navbar.contact")}</Link>
 						</li>
 
-						{/* Dropdown Langue - CLIC */}
+						{/* Language Selector */}
 						<li className="nav-item lang-dropdown" ref={dropdownRef}>
 							<button
 								className={`lang-trigger ${langDropdown ? 'active' : ''}`}
 								onClick={toggleLangDropdown}
+								aria-label="Change Language"
 							>
-								{i18n.language === 'fr' ? '🇫🇷 FR' : '🇬🇧 EN'}
+								{i18n.language === 'fr' ? '🇫🇷' : '🇬🇧'}
 								<span className="dropdown-arrow">▼</span>
 							</button>
 							{langDropdown && (

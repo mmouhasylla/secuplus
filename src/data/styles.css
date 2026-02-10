@@ -1,19 +1,41 @@
 :root {
-	/* ------- colors ------- */
-	--primary-color: #000000;
-	/* Black as requested */
-	--secondary-color: #000000;
-	/* Black */
-	--tertiary-color: #000000;
-	/* Black */
-	--quaternary-color: #000000;
-	/* Black */
-	--link-color: #000000;
-	--border-color: #000000;
-	/* ---------------------- */
+	--primary-color: #2563EB;
+	/* Blue Corporate */
+	--secondary-color: #1E293B;
+	/* Slate Dark */
+	--background-color: #F8FAFC;
+	/* Light Grey */
+	--link-color: #F59E0B;
+	/* Orange Accent */
+	--text-color: #334155;
+	--success-color: #10B981;
+}
 
-	/* ------- fonts ------- */
-	--primary-font: "Roboto", sans-serif;
-	--secondary-font: "Heebo", sans-serif;
-	/* --------------------- */
+body {
+	font-family: 'Montserrat', 'Roboto', sans-serif;
+	/* Keep original fonts if loaded, or fallback */
+	background-color: var(--background-color);
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: var(--text-color);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Common Utilities */
+.page-placeholder {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--secondary-color);
 }

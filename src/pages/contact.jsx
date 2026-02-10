@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
 import NavBar from "../components/common/navBar";
+import TopBar from "../components/common/TopBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
@@ -12,6 +13,10 @@ import SEO from "../data/seo";
 import "./styles/contact.css";
 import ContactForm from "../components/contact/contactForm";
 
+/**
+ * Contact Page
+ * Displays contact information and a form for user inquiries.
+ */
 const Contact = () => {
 	const { t } = useTranslation();
 
@@ -33,6 +38,7 @@ const Contact = () => {
 			</Helmet>
 
 			<div className="page-content">
+				<TopBar />
 				<NavBar active="contact" />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
@@ -57,12 +63,10 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="page-footer">
-						<Footer />
-					</div>
 				</div>
 			</div>
-		</React.Fragment>
+			<Footer />
+		</React.Fragment >
 	);
 };
 

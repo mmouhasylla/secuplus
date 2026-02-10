@@ -2,12 +2,17 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
+import TopBar from "../components/common/TopBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 import SEO from "../data/seo";
 import "./styles/about.css";
 
+/**
+ * About Page
+ * Displays information about the company, its values, and social links.
+ */
 const About = () => {
 
 	const { t } = useTranslation();
@@ -23,6 +28,7 @@ const About = () => {
 			</Helmet>
 
 			<div className="page-content">
+				<TopBar />
 				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
@@ -52,7 +58,7 @@ const About = () => {
 							</div>
 
 							<div className="about-left-side">
-								<img src="logo_secuplus.webp" alt="about" className="about-image" />
+								<img src="/logo_secuplus2.webp" alt="about" className="about-image" />
 								<span className="about-image-shadow" />
 								<div className="about-socials">
 									<Socials />
@@ -61,9 +67,9 @@ const About = () => {
 						</div>
 
 					</div>
-					<Footer />
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };
